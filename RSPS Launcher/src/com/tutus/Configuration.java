@@ -20,9 +20,6 @@ public class Configuration {
 
     // Audio Settings
     public static boolean enableAudio = true;
-    public static String AUDIO_DOWNLOAD_URL = "";
-    public static String AUDIO_SAVE_DIR = System.getProperty("user.home") + File.separator;;
-    public static String AUDIO_SAVE_NAME = "LauncherMusic";
 
     // Client Settings
     public static String CLIENT_DOWNLOAD_URL = "http://downloads.arix-rsps.com/arix-client.jar";

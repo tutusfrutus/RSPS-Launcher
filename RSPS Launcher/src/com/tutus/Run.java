@@ -1,12 +1,15 @@
 package com.tutus;
 
+import com.tutus.audio.AudioManager;
 import com.tutus.download.cache.CacheDownloader;
 import com.tutus.download.client.ClientDownloader;
+import com.tutus.versioncontrol.CacheVersion;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -19,6 +22,10 @@ public class Run extends Application implements EventHandler<ActionEvent> {
 
     public static void main(String[] args) {
         System.out.println("Launched the program");
+        //Plays the Music if it's set to true
+        if (Configuration.enableAudio == true){
+           // AudioManager.PlayMusic();
+        }
         launch(args);
 
     }
@@ -42,9 +49,10 @@ public class Run extends Application implements EventHandler<ActionEvent> {
     @Override
     public void handle(ActionEvent event) {
         if(event.getSource() == launchButton){
-            System.out.println("YEEET");
+            System.out.println("Button Pressed");
             try {
-                CacheDownloader.downloadCache();
+                //CacheDownloader.downloadCache();
+                CacheVersion.run();
                 ClientDownloader.downloadClient();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -52,4 +60,5 @@ public class Run extends Application implements EventHandler<ActionEvent> {
         }
 
     }
+
 }

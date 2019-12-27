@@ -1,6 +1,7 @@
 package com.tutus.audio;
 
 import com.tutus.Configuration;
+import javafx.scene.control.Button;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
@@ -8,14 +9,15 @@ import java.io.File;
 
 public class AudioManager {
 
-    public static void DownloadMusic(){
+    String audioFile = "Resources/Audio/launcherAudio.mp3";
+    Media music = new Media(new File(audioFile).toURI().toString());
+    MediaPlayer mediaPlayer = new MediaPlayer(music);
 
-    }
-
-    public static void PlayMusic(){
-        String audioFile = Configuration.AUDIO_SAVE_DIR + "/" + Configuration.AUDIO_SAVE_NAME;
-        Media music = new Media(new File(audioFile).toURI().toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(music);
-        mediaPlayer.play();
+    public void PlayMusic(){
+        if (mediaPlayer.getStatus() == MediaPlayer.Status.PLAYING) {
+            mediaPlayer.pause();
+        } else {
+            mediaPlayer.play();
+        }
     }
 }

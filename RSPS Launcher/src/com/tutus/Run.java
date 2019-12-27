@@ -1,6 +1,7 @@
 package com.tutus;
 
 import com.tutus.download.cache.CacheDownloader;
+import com.tutus.download.client.ClientDownloader;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -44,6 +45,7 @@ public class Run extends Application implements EventHandler<ActionEvent> {
             System.out.println("YEEET");
             try {
                 CacheDownloader.downloadCache();
+                ClientDownloader.downloadClient();
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -21,7 +21,7 @@ public class Configuration {
     public static boolean enableAudio = true;
 
     // Client Settings
-    public static String CLIENT_DOWNLOAD_URL = "";
+    public static String CLIENT_DOWNLOAD_URL = "http://downloads.arix-rsps.com/arix-client.jar";
     public static String CLIENT_SAVE_NAME = "Arix.jar";
     public static String CLIENT_SAVE_DIR = System.getProperty("user.home") + File.separator;
 }

@@ -33,7 +33,7 @@ public class Run extends Application implements EventHandler<ActionEvent> {
         StackPane layout = new StackPane();
         layout.getChildren().add(launchButton);
 
-        Scene mainScene = new Scene(layout, 300, 250);
+        Scene mainScene = new Scene(layout, Configuration.appWidth, Configuration.appHeight);
         primaryStage.setScene(mainScene);
         primaryStage.show();
 

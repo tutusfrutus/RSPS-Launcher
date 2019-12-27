@@ -1,5 +1,6 @@
 package com.tutus;
 
+import java.awt.*;
 import java.io.File;
 
 public class Configuration {
@@ -19,9 +20,16 @@ public class Configuration {
 
     // Audio Settings
     public static boolean enableAudio = true;
+    public static String AUDIO_DOWNLOAD_URL = "";
+    public static String AUDIO_SAVE_DIR = System.getProperty("user.home") + File.separator;;
+    public static String AUDIO_SAVE_NAME = "LauncherMusic";
 
     // Client Settings
     public static String CLIENT_DOWNLOAD_URL = "http://downloads.arix-rsps.com/arix-client.jar";
     public static String CLIENT_SAVE_NAME = "Arix.jar";
     public static String CLIENT_SAVE_DIR = System.getProperty("user.home") + File.separator;
+
+    // Launcher Settings
+    public static int appWidth = 500;
+    public static int appHeight = 300;
 }

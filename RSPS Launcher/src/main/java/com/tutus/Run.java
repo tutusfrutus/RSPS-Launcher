@@ -53,10 +53,13 @@ public class Run extends Application implements EventHandler<ActionEvent> {
             try {
                 //CacheDownloader.downloadCache();
                 CacheVersion.run();
-                ClientDownloader.downloadClient();
-            } catch (IOException e) {
+                //ClientDownloader.downloadClient();
+            } //catch (IOException e) {
+            catch (Exception e) {
                 e.printStackTrace();
             }
+            //    e.printStackTrace();
+            //}
         }
 
     }

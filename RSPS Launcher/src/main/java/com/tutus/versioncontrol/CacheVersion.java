@@ -8,8 +8,8 @@ import java.net.URL;
 
 public class CacheVersion {
 
-    public static final String VERSION_URL = "http://downloads.arix-rsps.com/version.txt";
-    public static final String VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME +  File.separator + "cacheVersion.dat";
+    private static final String VERSION_URL = "http://downloads.arix-rsps.com/version.txt";
+    private static final String VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "cacheVersion.dat";
 
     public static void run() {
         try{
@@ -20,7 +20,7 @@ public class CacheVersion {
                 out.write(String.valueOf(latestVersion).getBytes());;
             }
         } catch(Exception e){
-            handleException(e);
+            System.out.println("Something went wrong Running CacheVersion");
         }
     }
 
@@ -29,6 +29,7 @@ public class CacheVersion {
             BufferedReader localVersion = new BufferedReader(new InputStreamReader(new FileInputStream(VERSION_FILE)));
             return Double.parseDouble(localVersion.readLine());
         } catch (Exception e) {
+            System.out.println("Couldn't find latest version from cacheVersion");
             return 0.1;
         }
     }
@@ -39,12 +40,8 @@ public class CacheVersion {
             BufferedReader br = new BufferedReader(new InputStreamReader(versionFile.openStream()));
             return Double.parseDouble(br.readLine());
         } catch (Exception e) {
-            handleException(e);
+            System.out.println("Couldn't find latest version from URL");
             return -1;
         }
-    }
-
-    private static void handleException(Exception e) {
-        //TODO
     }
 }

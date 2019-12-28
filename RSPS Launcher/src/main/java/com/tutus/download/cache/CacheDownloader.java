@@ -3,10 +3,10 @@ package com.tutus.download.cache;
 import com.tutus.Configuration;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import net.lingala.zip4j.ZipFile;
+import net.lingala.zip4j.exception.ZipException;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -22,7 +22,7 @@ public class CacheDownloader {
         file.delete();
         System.out.println("Deleted File");
 
-        //downloads the cache file
+        // Downloads the cache file
         InputStream inputStream = new URL(Configuration.CACHE_DOWNLOAD_URL).openStream();
         Files.copy(inputStream, Paths.get(Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME), StandardCopyOption.REPLACE_EXISTING);
         System.out.println("Downloaded File");
@@ -30,12 +30,28 @@ public class CacheDownloader {
         // Get this download's progress.
         // TODO JPROGRESSBAR
 
+        // Unzips the Cache's Content
+        unzipCache();
+        // Sends a notification that the Cache has been updated (TEMPORARILY)
         cacheUpdated();
 
     }
 
+    private static String zipFilePath = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME;
+    private static String destDir = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME;
+
+    private static void unzipCache() {
+        System.out.println("Unzipping the Cache");
+        try {
+            ZipFile zipFile = new ZipFile(zipFilePath);
+            zipFile.extractAll(destDir);
+        } catch (ZipException e) {
+            e.printStackTrace();
+        }
+    }
+
 // Sends an alert upon completion
-    public static void cacheUpdated() {
+    public static void cacheUpdated() throws ZipException {
         Alert downloadFinished = new Alert(Alert.AlertType.INFORMATION);
         downloadFinished.setTitle("Cache Update Completed");
         downloadFinished.setHeaderText("Your Cache has been updated completely.");

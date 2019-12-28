@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8029622d-4ffd-4cb0-9fe0-da8d1af7e1bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Resources/Audio/launcherAudio.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_lingala_zip4j_zip4j_2_2_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/Configuration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutus/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutus/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/audio/AudioManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutus/audio/AudioManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/versioncontrol/CacheVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tutus/versioncontrol/CacheVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RSPS Launcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RSPS Launcher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/Configuration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/Run.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/download/cache/CacheDownloader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/download/client/ClientDownloader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/audio/AudioManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/audio/AudioManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/download/cache/CacheDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/download/client/ClientDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/client/ClientDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/frame/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/frame/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/frame/ProgressBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/frame/ProgressBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/versioncontrol/CacheVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tutus/versioncontrol/ClientVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/ClientVersion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +50,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -80,7 +96,9 @@
       <updated>1577402626131</updated>
       <workItem from="1577402630166" duration="5007000" />
       <workItem from="1577452646179" duration="166000" />
-      <workItem from="1577452824163" duration="8472000" />
+      <workItem from="1577452824163" duration="9757000" />
+      <workItem from="1577492779355" duration="4498000" />
+      <workItem from="1577498456065" duration="936000" />
     </task>
     <servers />
   </component>
@@ -88,38 +106,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#Project_Structure" timestamp="1577498794866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Project_Structure/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498794866" />
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1577405083593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577405083593" />
+    <state x="590" y="210" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1577498507921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="590" y="210" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498507921" />
     <state x="640" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577403276297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577403276297" />
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom" timestamp="1577465518642">
+    <state width="1877" height="104" key="GridCell.Tab.0.bottom" timestamp="1577499255419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577465518642" />
-    <state width="1877" height="104" key="GridCell.Tab.0.center" timestamp="1577465518642">
+    <state width="1877" height="104" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577499255419" />
+    <state width="1877" height="104" key="GridCell.Tab.0.center" timestamp="1577499255419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577465518642" />
-    <state width="1877" height="104" key="GridCell.Tab.0.left" timestamp="1577465518642">
+    <state width="1877" height="104" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577499255419" />
+    <state width="1877" height="104" key="GridCell.Tab.0.left" timestamp="1577499255419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577465518642" />
-    <state width="1877" height="104" key="GridCell.Tab.0.right" timestamp="1577465518642">
+    <state width="1877" height="104" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577499255419" />
+    <state width="1877" height="104" key="GridCell.Tab.0.right" timestamp="1577499255419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577465518642" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1577453090023">
+    <state width="1877" height="104" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577499255419" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1577498442747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577453090023" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577452834430">
+    <state x="461" y="163" key="SettingsEditor/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498442747" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577498458498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577452834430" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498458498" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577405211827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

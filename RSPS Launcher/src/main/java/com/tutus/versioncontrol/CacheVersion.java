@@ -9,7 +9,7 @@ import java.net.URL;
 public class CacheVersion {
 
     public static final String VERSION_URL = "http://downloads.arix-rsps.com/version.txt";
-    public static final String VERSION_FILE = Configuration.CACHE_SAVE_DIR + "cacheVersion.dat";
+    public static final String VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME +  File.separator + "cacheVersion.dat";
 
     public static void run() {
         try{

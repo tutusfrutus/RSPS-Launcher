@@ -17,6 +17,7 @@ public class Configuration {
     public static String CACHE_DOWNLOAD_URL = "http://downloads.arix-rsps.com/arixcache.zip";
     public static String CACHE_SAVE_NAME = "TestLauncherCache.zip";
     public static String CACHE_SAVE_DIR = System.getProperty("user.home") + File.separator;
+    public static String CACHE_FOLDER_NAME = "PlutusTest";
 
     // Audio Settings
     public static boolean enableAudio = true;

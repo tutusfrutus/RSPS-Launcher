@@ -8,15 +8,15 @@ import java.net.URL;
 
 public class CacheVersion {
 
-    private static final String VERSION_URL = "http://downloads.arix-rsps.com/version.txt";
-    private static final String VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "cacheVersion.dat";
+    //private static final String VERSION_URL = "http://downloads.arix-rsps.com/version.txt";
+    //private static final String VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "cacheVersion.dat";
 
     public static void run() {
         try{
             double latestVersion = getLatestVersion();
             if(latestVersion > CacheVersion.getCurrentVersion()){
                 CacheDownloader.downloadCache();
-                OutputStream out = new FileOutputStream(VERSION_FILE);
+                OutputStream out = new FileOutputStream(Configuration.CACHE_VERSION_FILE);
                 out.write(String.valueOf(latestVersion).getBytes());;
             }
         } catch(Exception e){
@@ -26,7 +26,7 @@ public class CacheVersion {
 
     private static double getCurrentVersion(){
         try {
-            BufferedReader localVersion = new BufferedReader(new InputStreamReader(new FileInputStream(VERSION_FILE)));
+            BufferedReader localVersion = new BufferedReader(new InputStreamReader(new FileInputStream(Configuration.CACHE_VERSION_FILE)));
             return Double.parseDouble(localVersion.readLine());
         } catch (Exception e) {
             System.out.println("Couldn't find latest version from cacheVersion");
@@ -36,7 +36,7 @@ public class CacheVersion {
 
     private static double getLatestVersion(){
         try {
-            URL versionFile = new URL(VERSION_URL);
+            URL versionFile = new URL(Configuration.CACHE_VERSION_URL);
             BufferedReader br = new BufferedReader(new InputStreamReader(versionFile.openStream()));
             return Double.parseDouble(br.readLine());
         } catch (Exception e) {

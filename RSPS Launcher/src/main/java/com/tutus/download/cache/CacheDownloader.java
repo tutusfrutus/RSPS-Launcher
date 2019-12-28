@@ -34,19 +34,23 @@ public class CacheDownloader {
         unzipCache();
         // Sends a notification that the Cache has been updated (TEMPORARILY)
         cacheUpdated();
-
     }
 
     private static String zipFilePath = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME;
     private static String destDir = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME;
 
-    private static void unzipCache() {
+    private static void unzipCache() throws IOException {
         System.out.println("Unzipping the Cache");
+        ZipFile zipFile = new ZipFile(zipFilePath);
         try {
-            ZipFile zipFile = new ZipFile(zipFilePath);
+            //ZipFile zipFile = new ZipFile(zipFilePath);
             zipFile.extractAll(destDir);
         } catch (ZipException e) {
             e.printStackTrace();
+        }
+        finally {
+            System.out.println("Removing the old zip file");
+            Files.deleteIfExists(Paths.get(zipFilePath));
         }
     }
 

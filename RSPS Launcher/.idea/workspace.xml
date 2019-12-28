@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8029622d-4ffd-4cb0-9fe0-da8d1af7e1bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_lingala_zip4j_zip4j_2_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSPS Launcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RSPS Launcher.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/Configuration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/Run.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/download/cache/CacheDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSPS Launcher/com/tutus/download/client/ClientDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/audio/AudioManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/audio/AudioManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/download/cache/CacheDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/download/client/ClientDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/client/ClientDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/frame/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/frame/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/frame/ProgressBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/frame/ProgressBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/versioncontrol/CacheVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tutus/versioncontrol/ClientVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/ClientVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +80,8 @@
       <workItem from="1577452646179" duration="166000" />
       <workItem from="1577452824163" duration="9757000" />
       <workItem from="1577492779355" duration="4498000" />
-      <workItem from="1577498456065" duration="936000" />
+      <workItem from="1577498456065" duration="1655000" />
+      <workItem from="1577539350488" duration="3659000" />
     </task>
     <servers />
   </component>
@@ -122,30 +105,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577403276297" />
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom" timestamp="1577499255419">
+    <state width="1877" height="104" key="GridCell.Tab.0.bottom" timestamp="1577546812362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577499255419" />
-    <state width="1877" height="104" key="GridCell.Tab.0.center" timestamp="1577499255419">
+    <state width="1877" height="104" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577546812362" />
+    <state width="1877" height="104" key="GridCell.Tab.0.center" timestamp="1577546812362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577499255419" />
-    <state width="1877" height="104" key="GridCell.Tab.0.left" timestamp="1577499255419">
+    <state width="1877" height="104" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577546812362" />
+    <state width="1877" height="104" key="GridCell.Tab.0.left" timestamp="1577546812362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577499255419" />
-    <state width="1877" height="104" key="GridCell.Tab.0.right" timestamp="1577499255419">
+    <state width="1877" height="104" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577546812362" />
+    <state width="1877" height="104" key="GridCell.Tab.0.right" timestamp="1577546812362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577499255419" />
+    <state width="1877" height="104" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577546812362" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1577498442747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498442747" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577498458498">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577539352507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498458498" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577539352507" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577405211827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

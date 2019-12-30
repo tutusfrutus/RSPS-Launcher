@@ -5,6 +5,7 @@ import com.tutus.download.cache.CacheDownloader;
 import com.tutus.download.client.ClientDownloader;
 import com.tutus.versioncontrol.CacheVersion;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -19,6 +20,7 @@ import java.io.IOException;
 public class Run extends Application implements EventHandler<ActionEvent> {
 
     Button launchButton;
+    Thread cacheVer = new Thread(new CacheVersion(), "cacheVer");
 
     public static void main(String[] args) {
         System.out.println("Launched the program");
@@ -52,7 +54,8 @@ public class Run extends Application implements EventHandler<ActionEvent> {
             System.out.println("Button Pressed");
             try {
                 //CacheDownloader.downloadCache();
-                CacheVersion.run();
+                //CacheVersion.run();
+                Platform.runLater(cacheVer);
                 //ClientDownloader.downloadClient();
             } //catch (IOException e) {
             catch (Exception e) {

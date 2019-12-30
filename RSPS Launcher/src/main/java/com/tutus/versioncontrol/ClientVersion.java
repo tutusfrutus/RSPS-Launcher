@@ -4,15 +4,16 @@ import com.tutus.Configuration;
 import com.tutus.download.cache.CacheDownloader;
 
 import java.io.*;
-import java.net.URL;
 
 public class ClientVersion {
 
-    public static void run() {
+    CacheDownloader cacheDownloader = new CacheDownloader();
+
+    public void run() {
         try{
             double latestVersion = getLatestVersion();
-            if(latestVersion > ClientVersion.getCurrentVersion()){
-                CacheDownloader.downloadCache();
+            if(latestVersion > getCurrentVersion()){
+                cacheDownloader.downloadCache();
                 OutputStream out = new FileOutputStream(Configuration.CLIENT_VERSION_FILE);
                 out.write(String.valueOf(latestVersion).getBytes());;
             }
@@ -21,7 +22,7 @@ public class ClientVersion {
         }
     }
 
-    private static double getCurrentVersion(){
+    private double getCurrentVersion(){
         try {
             BufferedReader localVersion = new BufferedReader(new InputStreamReader(new FileInputStream(Configuration.CLIENT_VERSION_FILE)));
             return Double.parseDouble(localVersion.readLine());
@@ -31,7 +32,7 @@ public class ClientVersion {
         }
     }
 
-    private static double getLatestVersion() {
+    private double getLatestVersion() {
 
         // TODO MD5 checksum using Configuration.CLIENT_FILE_URL
         return 1;

@@ -6,16 +6,15 @@ import com.tutus.download.cache.CacheDownloader;
 import java.io.*;
 import java.net.URL;
 
-public class CacheVersion {
+public class CacheVersion implements Runnable {
 
-    //private static final String VERSION_URL = "http://downloads.arix-rsps.com/version.txt";
-    //private static final String VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "cacheVersion.dat";
+    private CacheDownloader cacheDownloader = new CacheDownloader();
 
-    public static void run() {
+    public void run() {
         try{
             double latestVersion = getLatestVersion();
-            if(latestVersion > CacheVersion.getCurrentVersion()){
-                CacheDownloader.downloadCache();
+            if(latestVersion > getCurrentVersion()){
+                cacheDownloader.downloadCache();
                 OutputStream out = new FileOutputStream(Configuration.CACHE_VERSION_FILE);
                 out.write(String.valueOf(latestVersion).getBytes());;
             }
@@ -24,7 +23,7 @@ public class CacheVersion {
         }
     }
 
-    private static double getCurrentVersion(){
+    private double getCurrentVersion(){
         try {
             BufferedReader localVersion = new BufferedReader(new InputStreamReader(new FileInputStream(Configuration.CACHE_VERSION_FILE)));
             return Double.parseDouble(localVersion.readLine());
@@ -34,7 +33,7 @@ public class CacheVersion {
         }
     }
 
-    private static double getLatestVersion(){
+    private double getLatestVersion(){
         try {
             URL versionFile = new URL(Configuration.CACHE_VERSION_URL);
             BufferedReader br = new BufferedReader(new InputStreamReader(versionFile.openStream()));

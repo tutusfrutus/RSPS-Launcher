@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8029622d-4ffd-4cb0-9fe0-da8d1af7e1bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/ClientVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/ClientVersion.java" afterDir="false" />
     </list>
@@ -82,7 +83,8 @@
       <workItem from="1577452824163" duration="9757000" />
       <workItem from="1577492779355" duration="4498000" />
       <workItem from="1577498456065" duration="1655000" />
-      <workItem from="1577539350488" duration="6582000" />
+      <workItem from="1577539350488" duration="7933000" />
+      <workItem from="1577657115756" duration="6240000" />
     </task>
     <servers />
   </component>
@@ -106,33 +108,87 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577403276297" />
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom" timestamp="1577547902309">
+    <state x="578" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1577562940034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577547902309" />
-    <state width="1877" height="104" key="GridCell.Tab.0.center" timestamp="1577547902309">
+    <state x="578" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577562940034" />
+    <state x="715" y="224" key="#xdebugger.evaluate" timestamp="1577663201316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577547902309" />
-    <state width="1877" height="104" key="GridCell.Tab.0.left" timestamp="1577547902309">
+    <state x="715" y="224" key="#xdebugger.evaluate/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663201316" />
+    <state width="1877" height="258" key="GridCell.Tab.0.bottom" timestamp="1577663947695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577547902309" />
-    <state width="1877" height="104" key="GridCell.Tab.0.right" timestamp="1577547902309">
+    <state width="1877" height="258" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663947695" />
+    <state width="1877" height="258" key="GridCell.Tab.0.center" timestamp="1577663947695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577547902309" />
+    <state width="1877" height="258" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663947695" />
+    <state width="1877" height="258" key="GridCell.Tab.0.left" timestamp="1577663947695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663947695" />
+    <state width="1877" height="258" key="GridCell.Tab.0.right" timestamp="1577663947695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663947695" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1577663285934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663285934" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1577663285934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663285934" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1577663285934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663285934" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1577663285934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663285934" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1577498442747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498442747" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577539352507">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577657120673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577539352507" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577657120673" />
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1577660137269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="118" width="607" height="804" key="find.popup/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577660137269" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577405211827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577405211827" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutus/Run.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

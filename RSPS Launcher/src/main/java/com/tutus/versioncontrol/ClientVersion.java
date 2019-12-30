@@ -1,19 +1,23 @@
 package com.tutus.versioncontrol;
 
 import com.tutus.Configuration;
-import com.tutus.download.cache.CacheDownloader;
+import com.tutus.download.client.ClientDownloader;
 
 import java.io.*;
 
 public class ClientVersion {
 
-    CacheDownloader cacheDownloader = new CacheDownloader();
+    ClientDownloader clientDownloader = new ClientDownloader();
 
     public void run() {
         try{
             double latestVersion = getLatestVersion();
             if(latestVersion > getCurrentVersion()){
-                cacheDownloader.downloadCache();
+                try {
+                    clientDownloader.downloadClient();
+                } catch (IOException e) {
+                    e.getStackTrace();
+                }
                 OutputStream out = new FileOutputStream(Configuration.CLIENT_VERSION_FILE);
                 out.write(String.valueOf(latestVersion).getBytes());;
             }

@@ -2,25 +2,34 @@ package com.tutus.versioncontrol;
 
 import com.tutus.Configuration;
 import com.tutus.download.cache.CacheDownloader;
+import javafx.concurrent.Task;
 
 import java.io.*;
 import java.net.URL;
 
-public class CacheVersion implements Runnable {
+public class CacheVersionTask {
 
     private CacheDownloader cacheDownloader = new CacheDownloader();
 
-    public void run() {
-        try{
-            double latestVersion = getLatestVersion();
-            if(latestVersion > getCurrentVersion()){
-                cacheDownloader.downloadCache();
-                OutputStream out = new FileOutputStream(Configuration.CACHE_VERSION_FILE);
-                out.write(String.valueOf(latestVersion).getBytes());;
+    public void checkCacheVersionTask() {
+        Task<Void> task = new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                try{
+                    double latestVersion = getLatestVersion();
+                    if(latestVersion > getCurrentVersion()){
+                        cacheDownloader.downloadCache();
+                        OutputStream out = new FileOutputStream(Configuration.CACHE_VERSION_FILE);
+                        out.write(String.valueOf(latestVersion).getBytes());;
+                    }
+                } catch(Exception e){
+                    System.out.println("Something went wrong Running CacheVersion" + e.toString());
+                }
+                return null;
             }
-        } catch(Exception e){
-            System.out.println("Something went wrong Running CacheVersion");
-        }
+        };
+
+        new Thread(task).start();
     }
 
     private double getCurrentVersion(){

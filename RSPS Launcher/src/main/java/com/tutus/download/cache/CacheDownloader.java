@@ -17,7 +17,7 @@ public class CacheDownloader {
     private boolean cacheUpdated = false;
 
 // downloads the Cache File
-    public void downloadCache() throws IOException
+    public void downloadCache()
     {
         //deletes jar before downloading new one (if it exists)
         File file = new File(Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME);
@@ -27,15 +27,20 @@ public class CacheDownloader {
         System.out.println("Deleted File");
 
         // Downloads the cache file
-        InputStream inputStream = new URL(Configuration.CACHE_DOWNLOAD_URL).openStream();
-        Files.copy(inputStream, Paths.get(Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME));
+        InputStream inputStream = null;
+        try {
+            inputStream = new URL(Configuration.CACHE_DOWNLOAD_URL).openStream();
+            Files.copy(inputStream, Paths.get(Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         System.out.println("Downloaded File");
 
         // Get this download's progress.
         // TODO JPROGRESSBAR
 
         // Unzips the Cache's Content
-        unzipCache();
+            unzipCache();
         // Sends a notification that the Cache has been updated (TEMPORARILY)
 
         if(cacheUpdated) {
@@ -50,14 +55,13 @@ public class CacheDownloader {
                 }
 
             });
-            //cacheUpdated(); // Use a boolean for this. Don't rely on your exceptions to be thrown
         }
     }
 
     private static String zipFilePath = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME;
     private static String destDir = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME;
 
-    private void unzipCache() throws IOException {
+    private void unzipCache() {
         System.out.println("Unzipping the Cache");
         ZipFile zipFile = new ZipFile(zipFilePath);
         try {
@@ -69,7 +73,11 @@ public class CacheDownloader {
             e.printStackTrace();
         } finally {
             System.out.println("Removing the old zip file");
-            Files.deleteIfExists(Paths.get(zipFilePath));
+            try {
+                Files.deleteIfExists(Paths.get(zipFilePath));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             cacheUpdated = true;
         }
     }

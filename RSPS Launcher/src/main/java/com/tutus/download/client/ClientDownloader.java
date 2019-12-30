@@ -15,11 +15,13 @@ import java.nio.file.StandardCopyOption;
 public class ClientDownloader {
 
         // downloads the Cache File
-        public static void downloadClient() throws IOException
+        public void downloadClient() throws IOException
         {
             //deletes jar before downloading new one (if it exists)
             File file = new File(Configuration.CLIENT_SAVE_DIR + Configuration.CLIENT_SAVE_NAME);
-            file.delete();
+            if(file.exists()) {
+                file.delete();
+            }
             System.out.println("Deleted Client File");
 
             //downloads the cache file
@@ -35,7 +37,7 @@ public class ClientDownloader {
         }
 
         // Sends an alert upon completion
-        public static void clientUpdated() {
+        public void clientUpdated() {
             Alert downloadFinished = new Alert(Alert.AlertType.INFORMATION);
             downloadFinished.setTitle("Client Update Completed");
             downloadFinished.setHeaderText("Your Client has been updated completely.");

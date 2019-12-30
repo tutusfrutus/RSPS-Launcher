@@ -1,26 +1,23 @@
 package com.tutus;
 
-import com.tutus.audio.AudioManager;
-import com.tutus.download.cache.CacheDownloader;
-import com.tutus.download.client.ClientDownloader;
-import com.tutus.versioncontrol.CacheVersion;
+import com.tutus.versioncontrol.CacheVersionTask;
 import javafx.application.Application;
-import javafx.application.Platform;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import javax.swing.*;
+import java.util.concurrent.ExecutorService;
 
 
 public class Run extends Application implements EventHandler<ActionEvent> {
 
     Button launchButton;
-    Thread cacheVer = new Thread(new CacheVersion(), "cacheVer");
+    CacheVersionTask cacheVersionTask = new CacheVersionTask();
 
     public static void main(String[] args) {
         System.out.println("Launched the program");
@@ -30,7 +27,7 @@ public class Run extends Application implements EventHandler<ActionEvent> {
         }
         launch(args);
 
-    }
+    } //YouTube tutorial, cant take credits.
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -55,8 +52,9 @@ public class Run extends Application implements EventHandler<ActionEvent> {
             try {
                 //CacheDownloader.downloadCache();
                 //CacheVersion.run();
-                Platform.runLater(cacheVer);
+                //Platform.runLater(cacheVer);
                 //ClientDownloader.downloadClient();
+                cacheVersionTask.checkCacheVersionTask();
             } //catch (IOException e) {
             catch (Exception e) {
                 e.printStackTrace();

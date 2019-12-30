@@ -5,7 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/download/client/ClientDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/client/ClientDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersionTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/ClientVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/ClientVersion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tutus Frutus" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1VXbwXSuSoW61MU8jVSRfbQ5idG" />
@@ -84,22 +90,45 @@
       <workItem from="1577492779355" duration="4498000" />
       <workItem from="1577498456065" duration="1655000" />
       <workItem from="1577539350488" duration="7933000" />
-      <workItem from="1577657115756" duration="6240000" />
+      <workItem from="1577657115756" duration="12361000" />
     </task>
+    <task id="LOCAL-00001" summary="IntelliJ Git Test, static removal &amp; improvements to Cache Downloader.">
+      <created>1577664387611</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577664387611</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="IntelliJ Git Test, static removal &amp; improvements to Cache Downloader." />
+    <option name="LAST_COMMIT_MESSAGE" value="IntelliJ Git Test, static removal &amp; improvements to Cache Downloader." />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1577498794866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Project_Structure/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498794866" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1577405083593">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1577668435257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577405083593" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577668435257" />
     <state x="590" y="210" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1577498507921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -112,46 +141,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="578" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577562940034" />
+    <state x="595" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577668454325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577668454325" />
     <state x="715" y="224" key="#xdebugger.evaluate" timestamp="1577663201316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="224" key="#xdebugger.evaluate/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663201316" />
-    <state width="1877" height="258" key="GridCell.Tab.0.bottom" timestamp="1577663947695">
+    <state x="321" y="55" width="1367" height="809" key="CommitChangelistDialog2" timestamp="1577664386290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663947695" />
-    <state width="1877" height="258" key="GridCell.Tab.0.center" timestamp="1577663947695">
+    <state x="321" y="55" width="1367" height="809" key="CommitChangelistDialog2/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577664386290" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1577664566229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663947695" />
-    <state width="1877" height="258" key="GridCell.Tab.0.left" timestamp="1577663947695">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577664566229" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1577670100933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663947695" />
-    <state width="1877" height="258" key="GridCell.Tab.0.right" timestamp="1577663947695">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577670100933" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1577670100933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663947695" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1577663285934">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577670100933" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1577670100932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663285934" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1577663285934">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577670100932" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1577670100933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663285934" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1577663285934">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577670100933" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1577670100933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663285934" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1577663285934">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577670100933" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1577670100933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577663285934" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577670100933" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1577670100933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577670100933" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1577670100933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577670100933" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1577498442747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577498442747" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1577664427934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577664427934" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577657120673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -169,24 +214,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/CacheVersion.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tutus/Run.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="5" />
+          <line>32</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="9" />
+          <line>36</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

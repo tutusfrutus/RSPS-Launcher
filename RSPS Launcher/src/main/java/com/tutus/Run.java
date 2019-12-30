@@ -1,6 +1,8 @@
 package com.tutus;
 
+import com.sun.security.ntlm.Client;
 import com.tutus.versioncontrol.CacheVersionTask;
+import com.tutus.versioncontrol.ClientVersion;
 import javafx.application.Application;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
@@ -18,6 +20,7 @@ public class Run extends Application implements EventHandler<ActionEvent> {
 
     Button launchButton;
     CacheVersionTask cacheVersionTask = new CacheVersionTask();
+    ClientVersion clientVersion = new ClientVersion();
 
     public static void main(String[] args) {
         System.out.println("Launched the program");
@@ -50,11 +53,8 @@ public class Run extends Application implements EventHandler<ActionEvent> {
         if(event.getSource() == launchButton){
             System.out.println("Button Pressed");
             try {
-                //CacheDownloader.downloadCache();
-                //CacheVersion.run();
-                //Platform.runLater(cacheVer);
-                //ClientDownloader.downloadClient();
-                cacheVersionTask.checkCacheVersionTask();
+                clientVersion.run();
+                //cacheVersionTask.checkCacheVersionTask();
             } //catch (IOException e) {
             catch (Exception e) {
                 e.printStackTrace();

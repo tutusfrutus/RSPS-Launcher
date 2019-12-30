@@ -23,7 +23,8 @@ public class CacheVersionTask {
                         out.write(String.valueOf(latestVersion).getBytes());;
                     }
                 } catch(Exception e){
-                    System.out.println("Something went wrong Running CacheVersion" + e.toString());
+                    System.out.println("Something went wrong Running CacheVersion " + e.toString());
+                    System.out.println("Something went wrong Running CacheVersion " + e.getStackTrace());
                 }
                 return null;
             }

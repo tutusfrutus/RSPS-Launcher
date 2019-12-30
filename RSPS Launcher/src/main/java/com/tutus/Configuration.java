@@ -36,6 +36,6 @@ public class Configuration {
     public static final String CLIENT_VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "clientVersion.dat";
 
     // Launcher Settings
-    public static int appWidth = 500;
-    public static int appHeight = 300;
+    public static int appWidth = 800;
+    public static int appHeight = 600;
 }

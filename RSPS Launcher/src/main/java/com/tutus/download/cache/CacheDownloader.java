@@ -41,21 +41,6 @@ public class CacheDownloader {
 
         // Unzips the Cache's Content
             unzipCache();
-        // Sends a notification that the Cache has been updated (TEMPORARILY)
-
-        if(cacheUpdated) {
-            Alert downloadFinished = new Alert(Alert.AlertType.INFORMATION);
-            downloadFinished.setTitle("Cache Update Completed");
-            downloadFinished.setHeaderText("Your Cache has been updated completely.");
-            System.out.println("Alert Shown");
-            downloadFinished.showAndWait().ifPresent(rs -> {
-                if (rs == ButtonType.OK) {
-                    System.out.println("Pressed OK.");
-
-                }
-
-            });
-        }
     }
 
     private static String zipFilePath = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME;

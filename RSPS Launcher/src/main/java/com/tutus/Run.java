@@ -1,10 +1,13 @@
 package com.tutus;
 
+import com.tutus.audio.AudioManager;
 import com.tutus.versioncontrol.CacheVersionTask;
 import com.tutus.versioncontrol.client.ClientVersionTask;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
@@ -14,15 +17,13 @@ import javafx.stage.Stage;
 public class Run extends Application implements EventHandler<ActionEvent> {
 
     Button launchButton;
+    AudioManager audioManager = new AudioManager();
     CacheVersionTask cacheVersionTask = new CacheVersionTask();
     ClientVersionTask clientVersionTask = new ClientVersionTask();
 
     public static void main(String[] args) {
         System.out.println("Launched the program");
-        //Plays the Music if it's set to true
-        if (Configuration.enableAudio == true){
-           // AudioManager.PlayMusic();
-        }
+
         launch(args);
 
     }
@@ -40,7 +41,9 @@ public class Run extends Application implements EventHandler<ActionEvent> {
         Scene mainScene = new Scene(layout, Configuration.appWidth, Configuration.appHeight);
         primaryStage.setScene(mainScene);
         primaryStage.show();
-
+        if (Configuration.enableAudio == true) {
+            audioManager.playMusic();
+        }
     }
 
     @Override

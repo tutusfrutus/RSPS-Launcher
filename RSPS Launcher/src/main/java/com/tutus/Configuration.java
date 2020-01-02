@@ -23,7 +23,8 @@ public class Configuration {
     public static final String CACHE_VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "cacheVersion.dat";
 
     // Audio Settings
-    public static boolean enableAudio = true;
+    public static boolean enableAudio = false;
+    public static double audioVolume = 0.20;
 
     // Client Settings
     public static String CLIENT_DOWNLOAD_URL = "http://downloads.arix-rsps.com/arix-client.jar";

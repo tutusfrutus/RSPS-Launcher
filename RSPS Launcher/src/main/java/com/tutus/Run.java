@@ -1,7 +1,7 @@
 package com.tutus;
 
 import com.tutus.versioncontrol.CacheVersionTask;
-import com.tutus.versioncontrol.client.ClientVersion;
+import com.tutus.versioncontrol.client.ClientVersionTask;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -15,7 +15,7 @@ public class Run extends Application implements EventHandler<ActionEvent> {
 
     Button launchButton;
     CacheVersionTask cacheVersionTask = new CacheVersionTask();
-    ClientVersion clientVersion = new ClientVersion();
+    ClientVersionTask clientVersionTask = new ClientVersionTask();
 
     public static void main(String[] args) {
         System.out.println("Launched the program");
@@ -25,7 +25,7 @@ public class Run extends Application implements EventHandler<ActionEvent> {
         }
         launch(args);
 
-    } //YouTube tutorial, cant take credits.
+    }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -48,17 +48,12 @@ public class Run extends Application implements EventHandler<ActionEvent> {
         if(event.getSource() == launchButton){
             System.out.println("Button Pressed");
             try {
-               // clientVersion.run();
                 cacheVersionTask.checkCacheVersionTask();
-                clientVersion.run();
-            } //catch (IOException e) {
+                clientVersionTask.checkClientVersionTask();
+            }
             catch (Exception e) {
                 e.printStackTrace();
             }
-            //    e.printStackTrace();
-            //}
         }
-
     }
-
 }

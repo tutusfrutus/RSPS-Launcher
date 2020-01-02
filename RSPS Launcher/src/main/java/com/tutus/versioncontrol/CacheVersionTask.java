@@ -28,7 +28,7 @@ public class CacheVersionTask {
                 }
                 return null;
             }
-        };
+};
 
         new Thread(task).start();
     }

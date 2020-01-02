@@ -18,7 +18,6 @@ public class Configuration {
     public static String CACHE_SAVE_NAME = "TestLauncherCache.zip";
     public static String CACHE_SAVE_DIR = System.getProperty("user.home") + File.separator;
     public static String CACHE_FOLDER_NAME = "PlutusTest";
-
     // Cache Version Control
     public static final String CACHE_VERSION_URL = "http://downloads.arix-rsps.com/version.txt";
     public static final String CACHE_VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "cacheVersion.dat";
@@ -30,9 +29,6 @@ public class Configuration {
     public static String CLIENT_DOWNLOAD_URL = "http://downloads.arix-rsps.com/arix-client.jar";
     public static String CLIENT_SAVE_NAME = "Arix.jar";
     public static String CLIENT_SAVE_DIR = System.getProperty("user.home") + File.separator;
-
-    // Client Version Control
-    public static final String CLIENT_FILE_URL = "http://downloads.arix-rsps.com/arix-client.jar";
     public static final String CLIENT_VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "clientVersion.dat";
 
     // Launcher Settings

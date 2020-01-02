@@ -31,21 +31,5 @@ public class ClientDownloader {
 
             // Get this download's progress.
             // TODO JPROGRESSBAR
-
-            clientUpdated();
-
-        }
-
-        // Sends an alert upon completion
-        public void clientUpdated() {
-            Alert downloadFinished = new Alert(Alert.AlertType.INFORMATION);
-            downloadFinished.setTitle("Client Update Completed");
-            downloadFinished.setHeaderText("Your Client has been updated completely.");
-            System.out.println("Alert Shown");
-            downloadFinished.showAndWait().ifPresent(rs -> {
-                if (rs == ButtonType.OK) {
-                    System.out.println("Pressed OK.");
-                }
-            });
         }
     }

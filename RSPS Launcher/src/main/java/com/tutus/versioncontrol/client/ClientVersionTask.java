@@ -21,9 +21,10 @@ public class ClientVersionTask {
                     System.out.println("LocalCheck == " + localCheck);
                     String remoteCheck = Checksum.getRemoteChecksum();
                     System.out.println("RemoteCheck == " + remoteCheck);
-                    if (!localCheck.equals(remoteCheck) || localCheck.equals("-1")) {
+                    if (!localCheck.equals(remoteCheck) || localCheck.equals("-1") || Configuration.forceUpdate == true) {
                         try {
                             clientDownloader.downloadClient();
+                            Configuration.forceUpdate = false;
                         } catch (IOException e) {
                             e.getStackTrace();
                         }

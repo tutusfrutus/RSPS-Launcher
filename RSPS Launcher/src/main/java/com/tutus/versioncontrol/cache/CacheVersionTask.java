@@ -1,4 +1,4 @@
-package com.tutus.versioncontrol;
+package com.tutus.versioncontrol.cache;
 
 import com.tutus.Configuration;
 import com.tutus.download.cache.CacheDownloader;
@@ -17,7 +17,7 @@ public class CacheVersionTask {
             protected Void call() throws Exception {
                 try{
                     double latestVersion = getLatestVersion();
-                    if(latestVersion > getCurrentVersion()){
+                    if(latestVersion != getCurrentVersion() || Configuration.forceUpdate == true){
                         cacheDownloader.downloadCache();
                         OutputStream out = new FileOutputStream(Configuration.CACHE_VERSION_FILE);
                         out.write(String.valueOf(latestVersion).getBytes());;
@@ -29,7 +29,6 @@ public class CacheVersionTask {
                 return null;
             }
 };
-
         new Thread(task).start();
     }
 

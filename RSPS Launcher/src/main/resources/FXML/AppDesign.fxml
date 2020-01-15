@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane id="pane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tutus.Controller">
+    <fx:define>
+        <Font fx:id="FONT" size="18" />
+    </fx:define>
+
+    <Pane fx:id="buttonPane">
+        <Button fx:id="launchButton" layoutX="536" layoutY="373" onAction="#launchButton" prefHeight="37" prefWidth="178" />
+        <Button fx:id="forceButton" layoutX="0" layoutY="373" onAction="#forceButton" prefHeight="37" prefWidth="178" />
+        <Button layoutX="560.0" layoutY="22.0" onAction="#musicButton" prefHeight="43.0" prefWidth="141.0" text="Play Music" />
+      <Slider fx:id="volumeSlider" layoutX="560.0" layoutY="77.0" />
+    </Pane>
+
+</AnchorPane>

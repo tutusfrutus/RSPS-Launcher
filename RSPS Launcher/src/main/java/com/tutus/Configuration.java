@@ -2,6 +2,7 @@ package com.tutus;
 
 import java.awt.*;
 import java.io.File;
+import java.net.URL;
 
 public class Configuration {
 
@@ -25,14 +26,22 @@ public class Configuration {
     // Audio Settings
     public static boolean enableAudio = false;
     public static double audioVolume = 0.20;
+    public static URL launcherAudio = Configuration.class.getResource("/Audio/launcherAudio.mp3");
 
     // Client Settings
     public static String CLIENT_DOWNLOAD_URL = "http://downloads.arix-rsps.com/arix-client.jar";
     public static String CLIENT_SAVE_NAME = "Arix.jar";
     public static String CLIENT_SAVE_DIR = System.getProperty("user.home") + File.separator;
-    public static final String CLIENT_VERSION_FILE = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME +  File.separator + "clientVersion.dat";
 
     // Launcher Settings
-    public static int appWidth = 800;
-    public static int appHeight = 600;
+    public static String LAUNCHER_TITLE = "Tutus Launcher";
+    public static URL iconImage = Configuration.class.getResource("/Images/icon.png");
+    public static URL logoImage = Configuration.class.getResource("/Images/arixLogo.png");
+    public static URL pbarFullImage = Configuration.class.getResource("/Images/sliderFull.png");
+    public static int appWidth = 700;
+    public static int appHeight = 400;
+
+    //Force Updates
+    public static boolean forceUpdate = false;
+
 }

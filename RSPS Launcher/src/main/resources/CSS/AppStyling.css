@@ -1,0 +1,31 @@
+#pane{
+    -fx-background-image: url("/Images/launcherBG.jpg");
+    -fx-background-repeat: REPEAT;
+    -fx-background-position: center center;
+}
+
+#forceButton{
+    -fx-background-image: url("/Images/forceUpdate.png");
+}
+
+#forceButton:hover{
+    -fx-background-image: url("/Images/forceUpdateHover.png");
+}
+
+#launchButton{
+    -fx-background-image: url("/Images/launchButton.png");
+}
+#launchButton:hover{
+    -fx-background-image: url("/Images/launchButtonHover.png");
+}
+
+.root {
+    -fx-focus-color: transparent;
+}
+.button {
+    -fx-background-insets: 0, 1, 2;
+}
+
+.button:focused {
+    -fx-background-insets: 0, 1, 2;
+}

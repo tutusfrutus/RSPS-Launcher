@@ -5,12 +5,12 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
 import java.io.File;
+import java.net.URL;
 
 public class AudioManager {
 
-    private String audioFile = "Resources/Audio/launcherAudio.mp3";
-    Media music = new Media(new File(audioFile).toURI().toString());
-    MediaPlayer mediaPlayer = new MediaPlayer(music);
+    private Media launcherMusic = new Media((Configuration.launcherAudio).toString());
+    MediaPlayer mediaPlayer = new MediaPlayer(launcherMusic);
 
     public void playMusic(){
         if (mediaPlayer.getStatus() == MediaPlayer.Status.PLAYING) {

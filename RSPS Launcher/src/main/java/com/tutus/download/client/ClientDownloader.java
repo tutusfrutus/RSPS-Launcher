@@ -1,8 +1,12 @@
 package com.tutus.download.client;
 
+import com.sun.javaws.progress.Progress;
 import com.tutus.Configuration;
+import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,11 +29,9 @@ public class ClientDownloader {
             System.out.println("Deleted Client File");
 
             //downloads the cache file
+
             InputStream inputStream = new URL(Configuration.CLIENT_DOWNLOAD_URL).openStream();
             Files.copy(inputStream, Paths.get(Configuration.CLIENT_SAVE_DIR + Configuration.CLIENT_SAVE_NAME), StandardCopyOption.REPLACE_EXISTING);
             System.out.println("Downloaded Client File");
-
-            // Get this download's progress.
-            // TODO JPROGRESSBAR
         }
     }

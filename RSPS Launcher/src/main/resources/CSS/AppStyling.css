@@ -9,9 +9,8 @@
 }
 
 #progressMain > .track {
-    -fx-text-box-border: #4b70fb;
-    -fx-control-inner-background: #3c7eff;
     -fx-shadow-highlight-color: transparent;
+    -fx-background-color: transparent;
 }
 
 #progressBarBackground{
@@ -19,6 +18,11 @@
     -fx-background-repeat: REPEAT;
     -fx-background-position: center center;
 }
+
+#progressLabel{
+    -fx-text-alignment: center;
+}
+
 
 #forceButton{
     -fx-background-image: url("/Images/Buttons/forceupdateButton.png");

@@ -19,4 +19,5 @@
     <Button fx:id="websiteButton" layoutX="505.0" layoutY="420.0" onAction="#websiteButton" prefHeight="50" prefWidth="155.0" />
      <Button fx:id="launchButton" layoutX="328.0" layoutY="420.0" onAction="#launchButton" prefHeight="50" prefWidth="155.0" />
      <Button fx:id="forceButton" layoutX="147.0" layoutY="420.0" onAction="#forceButton" prefHeight="50" prefWidth="155.0" />
+   <Label fx:id="progressLabel" layoutX="185.0" layoutY="486.0" prefHeight="17.0" prefWidth="385.0" />
 </AnchorPane>

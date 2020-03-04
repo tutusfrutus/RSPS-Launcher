@@ -4,6 +4,7 @@ import com.tutus.versioncontrol.cache.CacheVersionTask;
 import com.tutus.versioncontrol.client.ClientVersionTask;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ProgressBar;
 
 import java.awt.*;
 import java.io.IOException;
@@ -16,8 +17,12 @@ public class Controller {
     ClientVersionTask clientVersionTask = new ClientVersionTask();
 
     @FXML
+    private ProgressBar progressMain;
+
+    @FXML
     private void launchButton(ActionEvent event) {
         try {
+            progressMain.setProgress(0);
             cacheVersionTask.checkCacheVersionTask();
             clientVersionTask.checkClientVersionTask();
         } catch (Exception e) {

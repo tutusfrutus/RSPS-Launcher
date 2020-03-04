@@ -3,6 +3,8 @@ package com.tutus.versioncontrol.cache;
 import com.tutus.Configuration;
 import com.tutus.download.cache.CacheDownloader;
 import javafx.concurrent.Task;
+import javafx.fxml.FXML;
+import javafx.scene.control.ProgressBar;
 
 import java.io.*;
 import java.net.URL;
@@ -10,6 +12,9 @@ import java.net.URL;
 public class CacheVersionTask {
 
     private CacheDownloader cacheDownloader = new CacheDownloader();
+
+    @FXML
+    private ProgressBar progressMain;
 
     /**
      * Checks whether there is a difference between versions (Local versus Host)

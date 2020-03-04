@@ -34,12 +34,10 @@ public class Configuration {
     public static String CLIENT_SAVE_DIR = System.getProperty("user.home") + File.separator;
 
     // Launcher Settings
-    public static String LAUNCHER_TITLE = "Tutus Launcher";
+    public static String LAUNCHER_TITLE = "RuneLife Launcher by Tutus Frutus";
     public static URL iconImage = Configuration.class.getResource("/Images/icon.png");
-    public static URL logoImage = Configuration.class.getResource("/Images/arixLogo.png");
-    public static URL pbarFullImage = Configuration.class.getResource("/Images/sliderFull.png");
-    public static int appWidth = 700;
-    public static int appHeight = 400;
+    public static int appWidth = 800;
+    public static int appHeight = 600;
 
     //Force Updates
     public static boolean forceUpdate = false;

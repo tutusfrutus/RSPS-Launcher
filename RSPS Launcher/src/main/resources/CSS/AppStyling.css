@@ -1,22 +1,46 @@
 #pane{
-    -fx-background-image: url("/Images/launcherBG.jpg");
+    -fx-background-image: url("/Images/background.png");
     -fx-background-repeat: REPEAT;
     -fx-background-position: center center;
 }
 
 #forceButton{
-    -fx-background-image: url("/Images/forceUpdate.png");
+    -fx-background-image: url("/Images/Buttons/forceupdateButton.png");
+    -fx-background-position: center center;
 }
 
 #forceButton:hover{
-    -fx-background-image: url("/Images/forceUpdateHover.png");
+    -fx-background-image: url("/Images/Buttons/forceupdateButtonHover.png");
+    -fx-background-position: center center;
+}
+
+#forceButton:pressed{
+-fx-background-image: url("/Images/Buttons/forceupdateButtonActive.png");
+    -fx-background-position: center center;
 }
 
 #launchButton{
-    -fx-background-image: url("/Images/launchButton.png");
+    -fx-background-image: url("/Images/Buttons/launchButton.png");
+    -fx-background-position: center center;
 }
 #launchButton:hover{
-    -fx-background-image: url("/Images/launchButtonHover.png");
+    -fx-background-image: url("/Images/Buttons/launchButtonHover.png");
+    -fx-background-position: center center;
+}
+
+#launchButton:pressed{
+    -fx-background-image: url("/Images/Buttons/launchButtonActive.png");
+    -fx-background-position: center center;
+}
+
+#discordButton{
+    -fx-background-image: url("/Images/Buttons/discordButton.png");
+    -fx-background-position: center center;
+}
+
+#discordButton:hover{
+    -fx-background-image: url("/Images/Buttons/discordButtonHover.png");
+    -fx-background-position: center center;
 }
 
 .root {

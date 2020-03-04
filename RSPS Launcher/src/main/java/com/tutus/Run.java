@@ -33,21 +33,6 @@ public class Run extends Application {
     public void start(Stage primaryStage) throws Exception {
         //Loads the FXML File
         AnchorPane root = FXMLLoader.load(getClass().getResource("/FXML/AppDesign.fxml"));
-
-        // Creates the Logo Image
-        Image logo = new Image(Configuration.logoImage.toString(),450,200,true,true);
-        // Create the ImageView
-        ImageView imageView = new ImageView(logo);
-        imageView.setX(175); imageView.setY(100);
-        root.getChildren().add(imageView);
-
-        // Creates the Progress Bar Image
-        Image pBar = new Image(Configuration.pbarFullImage.toString(), 450,200, true, true);
-        // Create the ImageView
-        ImageView progBar = new ImageView(pBar);
-        progBar.setX(134); progBar.setY(375);
-        root.getChildren().add(progBar);
-
         //Creates the Scene
         Scene mainScene = new Scene(root, Configuration.appWidth, Configuration.appHeight);
         //Loads the CSS file

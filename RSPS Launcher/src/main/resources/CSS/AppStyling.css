@@ -4,6 +4,22 @@
     -fx-background-position: center center;
 }
 
+#progressMain > .bar {
+    -fx-background-color: linear-gradient(from 0px .75em to .75em 0px, repeat, -fx-accent 0%, -fx-accent 49%);
+}
+
+#progressMain > .track {
+    -fx-text-box-border: #4b70fb;
+    -fx-control-inner-background: #3c7eff;
+    -fx-shadow-highlight-color: transparent;
+}
+
+#progressBarBackground{
+    -fx-background-image: url("/Images/progressBar.png");
+    -fx-background-repeat: REPEAT;
+    -fx-background-position: center center;
+}
+
 #forceButton{
     -fx-background-image: url("/Images/Buttons/forceupdateButton.png");
     -fx-background-position: center center;
@@ -33,6 +49,20 @@
     -fx-background-position: center center;
 }
 
+#websiteButton{
+    -fx-background-image: url("/Images/Buttons/visitwebsiteButton.png");
+    -fx-background-position: center center;
+}
+#websiteButton:hover{
+    -fx-background-image: url("/Images/Buttons/visitwebsiteButtonHover.png");
+    -fx-background-position: center center;
+}
+
+#websiteButton:pressed{
+    -fx-background-image: url("/Images/Buttons/visitwebsiteButtonActive.png");
+    -fx-background-position: center center;
+}
+
 #discordButton{
     -fx-background-image: url("/Images/Buttons/discordButton.png");
     -fx-background-position: center center;
@@ -42,14 +72,22 @@
     -fx-background-image: url("/Images/Buttons/discordButtonHover.png");
     -fx-background-position: center center;
 }
+#discordButton:pressed{
+    -fx-background-image: url("/Images/Buttons/discordButtonActive.png");
+    -fx-background-position: center center;
+}
 
 .root {
     -fx-focus-color: transparent;
 }
+
 .button {
     -fx-background-insets: 0, 1, 2;
+    -fx-background-color: transparent;
 }
 
 .button:focused {
     -fx-background-insets: 0, 1, 2;
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
 }

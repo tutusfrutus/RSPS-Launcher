@@ -12,6 +12,10 @@ import java.security.NoSuchAlgorithmException;
 
 public class Checksum {
 
+    /**
+     * Get's the checksum/version from the local computer
+     * @return - Returns -1 if it couldn't find anything (making it update either way)
+     */
         public static String getLocalChecksum() {
             File local = new File(Configuration.CLIENT_SAVE_DIR + Configuration.CLIENT_SAVE_NAME);
             if(local.exists()) {
@@ -24,13 +28,17 @@ public class Checksum {
             return "-1";
         }
 
-        public static String getRemoteChecksum() {
+    /**
+     * Get's the checksum/version from the host/download URL
+     * @return - Returns -2 if it couldn't find anything (making it update either way)
+     */
+    public static String getRemoteChecksum() {
             try (InputStream stream = new URL(Configuration.CLIENT_DOWNLOAD_URL).openStream()) {
                 return  Checksum.calculateMd5(stream);
             } catch (Exception e) {
                 e.printStackTrace();
-                return null;
             }
+        return "-2";
         }
 
         public static String calculateMd5(final InputStream instream) {

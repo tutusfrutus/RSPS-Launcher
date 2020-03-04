@@ -1,28 +1,14 @@
 package com.tutus;
 
-import com.tutus.audio.AudioManager;
-import com.tutus.versioncontrol.cache.CacheVersionTask;
-import com.tutus.versioncontrol.client.ClientVersionTask;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
-import javafx.scene.paint.ImagePattern;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
-import java.net.URL;
 
 
 public class Run extends Application {
-
-    AudioManager audioManager = new AudioManager();
 
     public static void main(String[] args) {
         System.out.println("Launched the program");
@@ -47,9 +33,5 @@ public class Run extends Application {
         primaryStage.setResizable(false);
         //Displays the stage
         primaryStage.show();
-
-        if (Configuration.enableAudio == true) {
-            audioManager.playMusic();
-        }
     }
 }

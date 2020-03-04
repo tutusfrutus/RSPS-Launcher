@@ -1,6 +1,5 @@
 package com.tutus;
 
-import com.tutus.audio.AudioManager;
 import com.tutus.versioncontrol.cache.CacheVersionTask;
 import com.tutus.versioncontrol.client.ClientVersionTask;
 import javafx.event.ActionEvent;
@@ -15,7 +14,6 @@ public class Controller {
 
     CacheVersionTask cacheVersionTask = new CacheVersionTask();
     ClientVersionTask clientVersionTask = new ClientVersionTask();
-    AudioManager audioManager = new AudioManager();
 
     @FXML
     private void launchButton(ActionEvent event) {
@@ -37,10 +35,15 @@ public class Controller {
     }
 
     @FXML
-    private void musicButton(ActionEvent event) {
-        audioManager.playMusic();
+    private void websiteButton(ActionEvent event){
+        try {
+            Desktop.getDesktop().browse(new URL("https://runelife.net/").toURI());
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
     }
 
+    @FXML
     public void forceButton(ActionEvent actionEvent) {
         try {
             Configuration.forceUpdate = true;

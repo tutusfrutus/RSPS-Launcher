@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eba41990-7347-453a-a92b-3dcb34a93a1b" name="Default Changelist" comment="" />
+    <list default="true" id="eba41990-7347-453a-a92b-3dcb34a93a1b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/audio/AudioManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/download/cache/CacheDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/cache/CacheVersionTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/cache/CacheVersionTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/client/Checksum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/client/Checksum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/client/ClientVersionTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/client/ClientVersionTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutus/versioncontrol/client/MD5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Audio/launcherAudio.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CSS/AppStyling.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CSS/AppStyling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AppDesign.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AppDesign.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/discordButtonHover.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/discordButtonHover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/forceupdateButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/forceupdateButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/forceupdateButtonActive.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/forceupdateButtonActive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/forceupdateButtonHover.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/forceupdateButtonHover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/launchButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/launchButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/launchButtonActive.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/launchButtonActive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/launchButtonHover.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/launchButtonHover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/visitwebsiteButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/visitwebsiteButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/visitwebsiteButtonActive.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/visitwebsiteButtonActive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Buttons/visitwebsiteButtonHover.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Buttons/visitwebsiteButtonHover.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +36,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -32,10 +64,15 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Launcher" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8_162 Java Lib" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.tutus.Run" />
       <module name="RSPS Launcher" />
       <method v="2">
@@ -57,6 +94,7 @@
       <workItem from="1581434958998" duration="200000" />
       <workItem from="1583142979555" duration="2055000" />
       <workItem from="1583317248844" duration="3044000" />
+      <workItem from="1583325333446" duration="7911000" />
     </task>
     <servers />
   </component>
@@ -64,29 +102,38 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="225" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581435079632">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="552" y="178" key="#Project_Structure" timestamp="1583325378558">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="178" key="#Project_Structure/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1583325378558" />
+    <state x="506" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583325367616">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="506" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1583325367616" />
     <state x="225" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581435079632" />
     <state x="499" y="198" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581435076952">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="198" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1581435076952" />
-    <state width="1493" height="8" key="GridCell.Tab.0.bottom" timestamp="1583320295957">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="64" key="GridCell.Tab.0.bottom" timestamp="1583333005458">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="64" key="GridCell.Tab.0.bottom/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1583333005458" />
     <state width="1493" height="8" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583320295957" />
-    <state width="1493" height="8" key="GridCell.Tab.0.center" timestamp="1583320295956">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="64" key="GridCell.Tab.0.center" timestamp="1583333005458">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="64" key="GridCell.Tab.0.center/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1583333005458" />
     <state width="1493" height="8" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583320295956" />
-    <state width="1493" height="8" key="GridCell.Tab.0.left" timestamp="1583320295956">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="64" key="GridCell.Tab.0.left" timestamp="1583333005458">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="64" key="GridCell.Tab.0.left/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1583333005458" />
     <state width="1493" height="8" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583320295956" />
-    <state width="1493" height="8" key="GridCell.Tab.0.right" timestamp="1583320295956">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="64" key="GridCell.Tab.0.right" timestamp="1583333005458">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="64" key="GridCell.Tab.0.right/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1583333005458" />
     <state width="1493" height="8" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583320295956" />
     <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1583318126704">
       <screen x="0" y="0" width="1536" height="824" />
@@ -108,10 +155,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="279" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581434948674" />
-    <state x="466" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583317253046">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="583" y="300" key="com.intellij.ide.util.TipDialog" timestamp="1583325337621">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="583" y="300" key="com.intellij.ide.util.TipDialog/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1583325337621" />
     <state x="466" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583317253046" />
+    <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1583331156677">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="607" height="536" key="find.popup/-1280.75.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1583331156677" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581435030368">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

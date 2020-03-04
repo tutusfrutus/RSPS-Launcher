@@ -11,6 +11,9 @@ public class CacheVersionTask {
 
     private CacheDownloader cacheDownloader = new CacheDownloader();
 
+    /**
+     * Checks whether there is a difference between versions (Local versus Host)
+     */
     public void checkCacheVersionTask() {
         Task<Void> task = new Task<Void>() {
             @Override
@@ -32,6 +35,9 @@ public class CacheVersionTask {
         new Thread(task).start();
     }
 
+    /**
+     * Grabs the current local version from the user's computer
+     */
     private double getCurrentVersion(){
         try {
             BufferedReader localVersion = new BufferedReader(new InputStreamReader(new FileInputStream(Configuration.CACHE_VERSION_FILE)));
@@ -42,6 +48,9 @@ public class CacheVersionTask {
         }
     }
 
+    /**
+     * Grabs the latest online version from the Cache Version URL
+     */
     private double getLatestVersion(){
         try {
             URL versionFile = new URL(Configuration.CACHE_VERSION_URL);

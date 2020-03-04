@@ -12,6 +12,9 @@ public class ClientVersionTask {
 
     ClientDownloader clientDownloader = new ClientDownloader();
 
+    /**
+     * Checks for the client's version
+     */
     public void checkClientVersionTask() {
         Task<Void> task = new Task<Void>() {
             @Override

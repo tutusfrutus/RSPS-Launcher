@@ -14,7 +14,8 @@ import java.nio.file.Paths;
 
 public class CacheDownloader {
 
-    private boolean cacheUpdated = false;
+    private static String zipFilePath = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME;
+    private static String destDir = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME;
 
 // downloads the Cache File
     public void downloadCache()
@@ -43,12 +44,10 @@ public class CacheDownloader {
             unzipCache();
     }
 
-    private static String zipFilePath = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_SAVE_NAME;
-    private static String destDir = Configuration.CACHE_SAVE_DIR + Configuration.CACHE_FOLDER_NAME;
-
     private void unzipCache() {
         System.out.println("Unzipping the Cache");
         ZipFile zipFile = new ZipFile(zipFilePath);
+        boolean cacheUpdated = false;
         try {
             zipFile.extractAll(destDir);
             if (zipFile.getProgressMonitor().getResult() == ProgressMonitor.Result.SUCCESS) {
